@@ -20,9 +20,9 @@ public class Locations {
             {"上海", "北京", "成都", "香港", "珠海", "郑州", "重庆", "哈尔滨", "乌鲁木齐", "拉萨", "昆明", "三亚", "合肥",
                     "长沙", "银川", "大连", "石家庄", "太原"};
 
-    public static Map getLocations() {
-        int tab = new Random().nextInt(lngs.length - 1);
-        Map map = new HashMap();
+    public Map getLocations() {
+        int tab = new Random().nextInt(18);
+        Map<String,String> map = new HashMap();
         map.put("lng", lngs[tab]);
         map.put("lat", lats[tab]);
         map.put("city", citys[tab]);
