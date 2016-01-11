@@ -58,6 +58,7 @@ public class CollectData {
                 + "&edu=" + userData.getEducationData()//学历数据
                 + "&ind=" + userData.getIndustryData() //行业数据
                 + "&bp=" + getData(page)//来源页面数据
+                + "&is=" + androidData.getIsStart()
         ;
         return param;
     }

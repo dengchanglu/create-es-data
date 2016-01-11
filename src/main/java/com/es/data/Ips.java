@@ -7,6 +7,6 @@ import java.util.Random;
  */
 public class Ips {
     public String getIP() {
-        return new Random().nextInt(255) + "." + new Random().nextInt(255) + "." + new Random().nextInt(255);
+        return new Random().nextInt(255) + "." + new Random().nextInt(255) + "." + new Random().nextInt(255) + "." + new Random().nextInt(255);
     }
 }
