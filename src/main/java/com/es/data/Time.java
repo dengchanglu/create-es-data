@@ -13,12 +13,13 @@ import java.util.logging.SimpleFormatter;
  */
 public class Time {
     public long getTime() {
-        String times = "2015-12-"+(new Random().nextInt(31)+1)+" "+(new Random().nextInt(23))+":"+(new Random().nextInt(59))+":00";
+//        String times = "2016-01-"+(new Random().nextInt(31)+1)+" "+(new Random().nextInt(23))+":"+(new Random().nextInt(59))+":00";
+        String times = "2016-02-19 " + (new Random().nextInt(23)) + ":" + (new Random().nextInt(59)) + ":" + (new Random().nextInt(59));
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
         Date date = null;
         try {
             date = simpleDateFormat.parse(times);
-            return date.getTime()/1000;
+            return date.getTime();
         } catch (ParseException e) {
             e.printStackTrace();
         }

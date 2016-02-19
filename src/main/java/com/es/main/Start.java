@@ -19,10 +19,10 @@ public class Start {
 //        ExecutorService executorService = Executors.newCachedThreadPool();
 //        Thread theadsES = new TheadsES();
         CollectData collectData ;
-        for (int i = 0; i < 70000; i++) {
+        for (long i = 0; i < 100000; i++) {
 //            executorService.execute(new TheadsES());
             collectData = new CollectData();
-            HttpClient.get("http://192.168.1.3:27017", collectData.createAndroidData());
+            HttpClient.get("http://192.168.1.32:27017", collectData.createAndroidData());
         }
     }
 }

@@ -20,16 +20,18 @@ public class test {
 //        }
 
 //            String times = "2015-12-"+(new Random().nextInt(31)+1)+" "+(new Random().nextInt(23))+":"+(new Random().nextInt(59))+":00";
-        String times = "2015-12-2 0:0:00";
-            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
-            Date date = null;
-            try {
-                date = simpleDateFormat.parse(times);
-                System.out.println(date.getTime()/1000);
-//                return date.getTime()/1000;
-            } catch (ParseException e) {
-                e.printStackTrace();
-            }
+//        String times = "2015-12-2 0:0:00";
+//            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+//            Date date = null;
+//            try {
+//                date = simpleDateFormat.parse(times);
+//                System.out.println(date.getTime()/1000);
+////                return date.getTime()/1000;
+//            } catch (ParseException e) {
+//                e.printStackTrace();
+//            }
+        Date date = new Date();
+        System.out.println(date.toString());
 
     }
 }
