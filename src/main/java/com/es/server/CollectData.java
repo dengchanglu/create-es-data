@@ -58,7 +58,9 @@ public class CollectData {
                 + "&edu=" + userData.getEducationData()//学历数据
                 + "&ind=" + userData.getIndustryData() //行业数据
                 + "&bp=" + getData(page)//来源页面数据
-                + "&is=" + androidData.getIsStart()
+                + "&is=" + androidData.getIsStart()//是否为启动用户
+                + "&sessionkey=" + appData.getSessionKey() //会话用户key
+                + "&uuid=" + androidData.getUUID()//会话用户key
         ;
         return param;
     }

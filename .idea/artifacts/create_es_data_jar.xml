@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="create-es-data:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/create_es_data_jar</output-path>
+    <root id="archive" name="create-es-data.jar">
+      <element id="module-output" name="create-es-data" />
+    </root>
+  </artifact>
+</component>

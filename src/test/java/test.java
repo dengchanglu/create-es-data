@@ -5,12 +5,13 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Random;
+import java.util.UUID;
 
 /**
  * Created by perfection on 16-1-5.
  */
 public class test {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 //        Time time = new Time();
 //        System.out.println(time.getTime());
 //        UserData userData = new UserData();
@@ -30,8 +31,13 @@ public class test {
 //            } catch (ParseException e) {
 //                e.printStackTrace();
 //            }
-        Date date = new Date();
-        System.out.println(date.toString());
+//        Date date = new Date();
+//        System.out.println(date.toString());
+
+        String uuid = UUID.randomUUID().toString().split("-")[0];
+        for (int i = 0; i < 1300; i++) {
+            System.out.println('"' + UUID.randomUUID().toString().split("-")[0] + '"' + ',' + '"' + UUID.randomUUID().toString().split("-")[0] + '"' + ',' + '"' + UUID.randomUUID().toString().split("-")[0] + '"' + ',' + '"' + UUID.randomUUID().toString().split("-")[0] + '"' + ',' + '"' + UUID.randomUUID().toString().split("-")[0] + '"' + ',' + '"' + UUID.randomUUID().toString().split("-")[0] + '"' + ',' + '"' + UUID.randomUUID().toString().split("-")[0] + '"' + ',' + '"' + UUID.randomUUID().toString().split("-")[0] + '"' + ',' + '"' + UUID.randomUUID().toString().split("-")[0] + '"' + ',' + '"' + UUID.randomUUID().toString().split("-")[0] + '"' + ',');
+        }
 
     }
 }

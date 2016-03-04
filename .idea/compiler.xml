@@ -22,10 +22,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="create-es-data" />
         <module name="project" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="create-es-data" target="1.5" />
       <module name="project" target="1.5" />
     </bytecodeTargetLevel>
   </component>
